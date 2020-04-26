@@ -306,7 +306,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define max_software_endstops true  // If true, axis won't move to coordinates greater than the defined lengths below.
 
 // Travel limits after homing
-#define X_MAX_POS 150
+#define X_MAX_POS 200
 #define X_MIN_POS 0
 #define Y_MAX_POS 170
 #define Y_MIN_POS 0
@@ -395,8 +395,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,805.86}  // {calc,calc,calc,calib} TOlivo
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 2, 25}    // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,824}  // {calc,calc,calc,calib} TOlivo
+#define DEFAULT_MAX_FEEDRATE          {150, 150, 2, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {7000,7000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
